@@ -350,12 +350,18 @@
                 return;
             }
 
+            const locA = document.getElementById('ori-loc').options[document.getElementById('ori-loc').selectedIndex].text;
+            const locB = document.getElementById('des-loc').options[document.getElementById('des-loc').selectedIndex].text;
+
+            // Generación de links de Google Maps para fácil acceso del chofer
+            const mapLinkOri = `https://www.google.com/maps/search/${encodeURIComponent(f.oriAddr + ", " + locA + ", Santa Fe")}`;
+            const mapLinkDes = `https://www.google.com/maps/search/${encodeURIComponent(f.desAddr + ", " + locB + ", Santa Fe")}`;
+
             let taxMsg = "";
             if (document.getElementById('invoice-toggle').checked) {
                 taxMsg = `%0A%0A🧾 *DATOS DE FACTURACIÓN:*%0A- CUIT: ${document.getElementById('tax-id').value}%0A- RAZÓN: ${document.getElementById('tax-name').value}`;
             }
 
-            // Datos de transferencia con separador visual para el cliente
             let paymentDetails = "";
             if (f.payment === "Billetera Virtual / Transferencia") {
                 paymentDetails = `%0A%0A━━━━━━━━━━━━━━━━━━━━%0A🔔 *INFO PARA EL CLIENTE:*%0A━━━━━━━━━━━━━━━━━━━━%0A💰 *Datos para abonar tu envío:*%0A%0A📌 *Titular:* Mendosa Cosmea Milton Hernán%0A📌 *Alias:* servicioms.mp%0A📌 *CUIT/CUIL:* 20-34701759-1%0A📌 *Email:* mendosacosmea@gmail.com%0A%0A✅ _Por favor, enviá el comprobante por acá una vez realizado._%0A━━━━━━━━━━━━━━━━━━━━`;
@@ -364,16 +370,15 @@
             document.getElementById('ai-loading').style.display = 'flex';
             await new Promise(r => setTimeout(r, 800));
             document.getElementById('ai-loading').style.display = 'none';
-
-            const locA = document.getElementById('ori-loc').options[document.getElementById('ori-loc').selectedIndex].text;
-            const locB = document.getElementById('des-loc').options[document.getElementById('des-loc').selectedIndex].text;
             
             const msg = `🚛 *NUEVA SOLICITUD DE ENVÍO*%0A%0A` +
                         `👤 *CLIENTE:* ${f.name}%0A` +
                         `📊 *CARGA:* ${f.qty} x ${f.size}%0A` +
                         `━━━━━━━━━━━━━━━━━━━━%0A` +
                         `📍 *RETIRO:* ${locA} - ${f.oriAddr}%0A` +
+                        `🔗 *VER MAPA:* ${mapLinkOri}%0A%0A` +
                         `🏁 *ENTREGA:* ${locB} - ${f.desAddr}%0A` +
+                        `🔗 *VER MAPA:* ${mapLinkDes}%0A` +
                         `━━━━━━━━━━━━━━━━━━━━%0A` +
                         `💳 *PAGO:* ${f.payment}%0A` +
                         `💰 *TOTAL: ${document.getElementById('final-price').innerText}*` + 
