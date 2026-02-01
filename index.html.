@@ -340,14 +340,14 @@
             const locA = document.getElementById('ori-loc').options[document.getElementById('ori-loc').selectedIndex].text;
             const locB = document.getElementById('des-loc').options[document.getElementById('des-loc').selectedIndex].text;
 
-            let msg = `?? *PEDIDO INTEGRAL M.S.*%0A` +
-                      `?? *CLIENTE:* ${fields.name}%0A` +
-                      `?? *DESDE:* ${locA} (${fields.oriAddr})%0A` +
-                      `?? *HACIA:* ${locB} (${fields.desAddr})%0A` +
-                      `?? *CARGA:* ${fields.size}%0A` +
-                      `?? *PAGO:* ${payment}%0A` +
-                      `?? *FACTURA:* ${needInvoice}%0A` +
-                      `?? *TOTAL: ${total}*`;
+            let msg = ` *PEDIDO INTEGRAL M.S.*%0A` +
+                      ` *CLIENTE:* ${fields.name}%0A` +
+                      ` *DESDE:* ${locA} (${fields.oriAddr})%0A` +
+                      ` *HACIA:* ${locB} (${fields.desAddr})%0A` +
+                      ` *CARGA:* ${fields.size}%0A` +
+                      ` *PAGO:* ${payment}%0A` +
+                      ` *FACTURA:* ${needInvoice}%0A` +
+                      ` *TOTAL: ${total}*`;
 
             window.open(`https://wa.me/5493413753881?text=${msg}`, '_blank');
         }
@@ -356,3 +356,4 @@
 
 
 </html>
+
