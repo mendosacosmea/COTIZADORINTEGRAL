@@ -122,7 +122,7 @@
         <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex flex-col">
                 <span class="text-xl font-extrabold tracking-tighter text-slate-900 uppercase italic">SERVICIO INTEGRAL M.S</span>
-                <span class="text-[9px] font-bold text-blue-600 uppercase tracking-widest leading-none">LogÌstica y DistribuciÛn</span>
+                <span class="text-[9px] font-bold text-blue-600 uppercase tracking-widest leading-none">Log√≠stica y Distribuci√≥n</span>
             </div>
         </div>
     </nav>
@@ -130,13 +130,13 @@
     <main class="max-w-3xl mx-auto px-6 py-10">
         <div class="card-main p-6 md:p-10 border border-slate-100">
 
-            <!-- 1. TamaÒo del Paquete -->
+            <!-- 1. Tama√±o del Paquete -->
             <div class="mb-10">
-                <label class="block text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] mb-4">1. TamaÒo del Paquete</label>
+                <label class="block text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] mb-4">1. Tama√±o del Paquete</label>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <button onclick="setSize('PequeÒo', 1500, this)" class="size-card rounded-2xl p-5 text-left flex flex-col h-full">
+                    <button onclick="setSize('Peque√±o', 1500, this)" class="size-card rounded-2xl p-5 text-left flex flex-col h-full">
                         <svg class="check-icon w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1.00-1.414-1.414L9 10.586 7.707 9.293a1 1.00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                        <p class="font-extrabold text-slate-800 italic text-lg uppercase">PequeÒo</p>
+                        <p class="font-extrabold text-slate-800 italic text-lg uppercase">Peque√±o</p>
                         <p class="text-blue-600 font-bold text-sm mb-3">$1.500 local</p>
                         <p class="text-[10px] font-bold text-slate-400 uppercase mt-auto">Ej: Sobres, Docs.</p>
                     </button>
@@ -167,16 +167,16 @@
                             <option value="" disabled selected>Localidad...</option>
                             <option value="0">Rosario</option>
                             <option value="1">G. Baigorria</option>
-                            <option value="2">C. Berm˙dez</option>
-                            <option value="3">F. L. Beltr·n</option>
+                            <option value="2">C. Berm√∫dez</option>
+                            <option value="3">F. L. Beltr√°n</option>
                             <option value="4">San Lorenzo</option>
                             <option value="5">Ricardone</option>
-                            <option value="6">Pto. Gral. San MartÌn</option>
-                            <option value="7">Timb˙es</option>
+                            <option value="6">Pto. Gral. San Mart√≠n</option>
+                            <option value="7">Timb√∫es</option>
                             <option value="8">Aldao</option>
                             <option value="9">Pueblo Andino</option>
                         </select>
-                        <input type="text" id="ori-address" placeholder="DirecciÛn exacta" class="input-styled text-sm">
+                        <input type="text" id="ori-address" placeholder="Direcci√≥n exacta" class="input-styled text-sm">
                     </div>
 
                     <div class="space-y-4">
@@ -185,16 +185,16 @@
                             <option value="" disabled selected>Localidad...</option>
                             <option value="0">Rosario</option>
                             <option value="1">G. Baigorria</option>
-                            <option value="2">C. Berm˙dez</option>
-                            <option value="3">F. L. Beltr·n</option>
+                            <option value="2">C. Berm√∫dez</option>
+                            <option value="3">F. L. Beltr√°n</option>
                             <option value="4">San Lorenzo</option>
                             <option value="5">Ricardone</option>
-                            <option value="6">Pto. Gral. San MartÌn</option>
-                            <option value="7">Timb˙es</option>
+                            <option value="6">Pto. Gral. San Mart√≠n</option>
+                            <option value="7">Timb√∫es</option>
                             <option value="8">Aldao</option>
                             <option value="9">Pueblo Andino</option>
                         </select>
-                        <input type="text" id="des-address" placeholder="DirecciÛn exacta" class="input-styled text-sm">
+                        <input type="text" id="des-address" placeholder="Direcci√≥n exacta" class="input-styled text-sm">
                     </div>
                 </div>
             </div>
@@ -215,7 +215,7 @@
                     </div>
                 </div>
                 <div>
-                    <label class="block text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] mb-4">4. FacturaciÛn</label>
+                    <label class="block text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] mb-4">4. Facturaci√≥n</label>
                     <div class="flex items-center gap-4 bg-slate-50 p-3 rounded-xl border border-slate-100 h-[52px]">
                         <span class="text-[10px] font-bold text-slate-400 uppercase">Sin Factura</span>
                         <label class="flex items-center cursor-pointer">
@@ -239,7 +239,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
-                    <p class="text-[10px] font-black text-blue-800 uppercase italic">Coordinaremos RazÛn Social, CUIT e
+                    <p class="text-[10px] font-black text-blue-800 uppercase italic">Coordinaremos Raz√≥n Social, CUIT e
                         IVA por privado.</p>
                 </div>
             </div>
@@ -251,7 +251,7 @@
                     <label class="cursor-pointer">
                         <input type="radio" name="urgency" value="1" checked onchange="updatePrice()" class="hidden peer">
                         <div class="peer-checked:border-blue-600 peer-checked:bg-blue-50 border-2 border-slate-100 rounded-2xl p-4 text-center">
-                            <p class="font-bold text-xs uppercase">Est·ndar</p>
+                            <p class="font-bold text-xs uppercase">Est√°ndar</p>
                         </div>
                     </label>
                     <label class="cursor-pointer">
@@ -276,7 +276,7 @@
                     <h2 id="final-price" class="text-5xl font-black text-slate-900 italic tracking-tighter">$0</h2>
                 </div>
                 <button onclick="requestOrder()" class="w-full md:w-auto bg-slate-900 text-white px-10 py-5 rounded-2xl font-black uppercase italic tracking-widest shadow-xl active:scale-95 transition-transform">
-                    Confirmar EnvÌo
+                    Confirmar Env√≠o
                 </button>
             </div>
         </div>
@@ -330,13 +330,13 @@
             };
 
             if (!fields.size || !fields.oriLoc || !fields.desLoc || !fields.oriAddr || !fields.desAddr || !fields.name || !fields.phone) {
-                showAlert("Por favor completa todos los campos del envÌo.");
+                showAlert("Por favor completa todos los campos del env√≠o.");
                 return;
             }
 
             const total = document.getElementById('final-price').innerText;
             const payment = document.querySelector('input[name="payment"]:checked').value;
-            const needInvoice = document.getElementById('invoice-toggle').checked ? "SÕ (COORDINAR DATOS)" : "NO";
+            const needInvoice = document.getElementById('invoice-toggle').checked ? "S√ç (COORDINAR DATOS)" : "NO";
             const locA = document.getElementById('ori-loc').options[document.getElementById('ori-loc').selectedIndex].text;
             const locB = document.getElementById('des-loc').options[document.getElementById('des-loc').selectedIndex].text;
 
@@ -353,5 +353,6 @@
         }
     </script>
 </body>
+
 
 </html>
